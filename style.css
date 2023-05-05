@@ -1,17 +1,18 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
   * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-      font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
-  body{
+
+  body {
     background-color: #383b48;
   }
 
-  .wrapper{
+  .wrapper {
     width: 70vmin;
     height: 70vmin;
     background-color: #293447;
@@ -19,35 +20,112 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 1rem;
+    border-radius: 2vmin;
     display: flex;
     flex-direction: column;
-    
-   
-    
+
+
+
   }
-  .game-details{
+
+  .game-details {
     color: #B8C6DC;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
-    font-size: 1.1rem;
+    padding: 2.7vmin 4vmin;
+    font-size: 2.6vmin
   }
-  .play-board{
+
+  .play-board {
     width: 70vmin;
     min-height: 65vmin;
     background-color: #212837;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 2vmin 2vmin;
     display: grid;
     grid-template: repeat(30, 1fr)/repeat(30, 1fr);
     overflow: hidden;
   }
-  .snake-head{
+
+  .snake-head {
     background-color: rgb(2, 193, 37);
     border: 0.25vmin solid rgb(0, 0, 0);
   }
-  .food{
+
+  .food {
     background-color: rgb(249, 212, 1);
     border: 0.25vmin solid rgb(0, 0, 0);
   }
+
+ 
+
+  .gameoverbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 40vmin;
+    height: 30vmin;
+    background-color: rgb(255, 255, 255);
+    color: #2f70da;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    border-radius: 2vmin;
+    display: none;
+    
+
+  }
+
+  .gameover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4vmin;
+    
+  }
+
+  .gameoverscore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vmin;
+    font-size: 2.3vmin;
+    font-weight: 700;
+    margin: 0.7vmin;
+  }
+
+  .playagain {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+  }
+
+  .playagainbutton {
+    background-color: #2f70da;
+    color: white;
+    margin: 0 0.7rem;
+    padding: 1.7vmin 3vmin;
+    font-size: 2vmin;
+    font-weight: 700;
+    border-radius: 1.7vmin;
+    border: none;
+  }
+  .playagainbutton:hover{
+    cursor: pointer;
+  }
+
+@media (max-width: 400px){
+  
+}
