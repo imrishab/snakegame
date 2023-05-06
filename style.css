@@ -143,6 +143,7 @@
     top: 65%;
     left: 50%;
     transform: translate(-50%, 50%);
+    display: none;
 
 
   }
@@ -184,5 +185,37 @@
     .play-board {
       width: 90vmin;
       min-height: 82vmin;
+    }
+    .controller{
+      display: grid;
+    }
+    .wrapper {
+      transform: translate(-50%, -80%);
+    }
+    .gameoverbox {
+      transform: translate(-50%, -50%);
+      width: 70vmin;
+      height: 50vmin;
+    }
+    .controller {
+      transform: translate(-50%, -5%);
+    }
+    .gameover {
+      font-size: 3vmin;
+  
+    }
+  
+    .gameoverscore {
+      font-size: 4vmin;
+    } 
+    .playagainbutton {
+      background-color: #2f70da;
+      color: white;
+      margin: 0 0.7rem;
+      padding: 2vmin 4vmin;
+      font-size: 3.5vmin;
+      font-weight: 700;
+      border-radius: 2.5vmin;
+      border: none;
     }
   }
