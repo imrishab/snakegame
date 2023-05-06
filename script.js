@@ -7,6 +7,12 @@ var score2 = document.querySelector(".score2");
 var max = 0;
 var highScore = document.querySelector(".high-score");
 
+const up=document.querySelector(".up");
+const down=document.querySelector(".down");
+const right=document.querySelector(".right");
+const left=document.querySelector(".left");
+
+
 
 let foodX, foodY;
 let snakeBody = [];
@@ -18,6 +24,7 @@ const changeFoodPosition = () => {
     foodY = Math.floor(Math.random() * 30) + 1;
 
 }
+
 
 
 
@@ -109,7 +116,26 @@ function playagain() {
     document.addEventListener("keydown", changeDirection);
     snakeBody = [];
 }
+function goup(){
+    velocityX = 0;
+    velocityY = -1;
+}
+function godown(){
+    velocityX = 0;
+    velocityY = 1;
+}
+function goright(){
+    velocityX = 1;
+    velocityY = 0;
+}
+function goleft(){
+    velocityX = -1;
+        velocityY = 0;
+}
 
 document.addEventListener("keydown", changeDirection);
 playAgainButton.addEventListener("click", playagain);
-
+up.addEventListener("click", goup)
+down.addEventListener("click", godown)
+right.addEventListener("click", goright)
+left.addEventListener("click", goleft)
