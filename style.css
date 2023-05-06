@@ -1,5 +1,4 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
-
   * {
     margin: 0;
     padding: 0;
@@ -7,11 +6,9 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
   }
-
   body {
     background-color: #383b48;
   }
-
   .wrapper {
     width: 70vmin;
     height: 70vmin;
@@ -23,18 +20,13 @@
     border-radius: 2vmin;
     display: flex;
     flex-direction: column;
-
-
-
   }
-
   .mainbox {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
   .game-details {
     color: #B8C6DC;
     display: flex;
@@ -43,7 +35,6 @@
     padding: 2.7vmin 4vmin;
     font-size: 2.6vmin
   }
-
   .play-board {
     width: 70vmin;
     min-height: 65vmin;
@@ -53,19 +44,14 @@
     grid-template: repeat(30, 1fr)/repeat(30, 1fr);
     overflow: hidden;
   }
-
   .snake-head {
     background-color: rgb(2, 193, 37);
     border: 0.25vmin solid rgb(0, 0, 0);
   }
-
   .food {
     background-color: rgb(249, 212, 1);
     border: 0.25vmin solid rgb(0, 0, 0);
   }
-
-
-
   .gameoverbox {
     display: flex;
     justify-content: space-evenly;
@@ -81,18 +67,13 @@
     transform: translate(-50%, -35%);
     border-radius: 2vmin;
     display: none;
-
-
   }
-
   .gameover {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.4vmin;
-
   }
-
   .gameoverscore {
     display: flex;
     justify-content: center;
@@ -106,19 +87,11 @@
     font-weight: 700;
     margin: 0.7vmin;
   }
-
   .playagain {
-
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
-
   }
-
   .playagainbutton {
     background-color: #2f70da;
     color: white;
@@ -129,11 +102,9 @@
     border-radius: 1.7vmin;
     border: none;
   }
-
   .playagainbutton:hover {
     cursor: pointer;
   }
-
   .controller {
     display: grid;
     width: 50vmin;
@@ -144,22 +115,16 @@
     left: 50%;
     transform: translate(-50%, 50%);
     display: none;
-
-
   }
-
   .up {
     grid-area: 1 / 2 / 2 / 3;
   }
-
   .down {
     grid-area: 3 / 2 / 4 / 3;
   }
-
   .left {
     grid-area: 2 / 1 / 3 / 2;
   }
-
   .right {
     grid-area: 2 / 3 / 3 / 4;
   }
@@ -173,15 +138,11 @@
     color: #7a7c87;
     font-size: 10vmin;
   }
-
-  
-
   @media (max-width: 500px) {
     .wrapper {
       width: 90vmin;
       height: 90vmin;
     }
-
     .play-board {
       width: 90vmin;
       min-height: 82vmin;
@@ -202,20 +163,13 @@
     }
     .gameover {
       font-size: 3vmin;
-  
     }
-  
     .gameoverscore {
       font-size: 4vmin;
     } 
     .playagainbutton {
-      background-color: #2f70da;
-      color: white;
-      margin: 0 0.7rem;
       padding: 2vmin 4vmin;
       font-size: 3.5vmin;
-      font-weight: 700;
       border-radius: 2.5vmin;
-      border: none;
     }
   }
