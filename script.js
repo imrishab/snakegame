@@ -59,7 +59,7 @@ const changeDirection = (e) => {
         return;
     }
 
-
+    initGame()
 
 }
 
